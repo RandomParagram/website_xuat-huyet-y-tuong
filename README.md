@@ -1,2 +1,6 @@
-# website_xuat-huyet-y-tuong
-A white label website created to participate in HCMCOU's Mobile Development club competition — Web Design 2026, with the theme of creating a "white label" website.
+# xuat-huyet-y-tuong
+# Setup
+No setup required.
+Written with bare hands and bare languages (HTML, CSS, JavaScript).
+# Notes (Licenses)
+All content created under this website is licensed with The Unlicense. All assets in this repository 
