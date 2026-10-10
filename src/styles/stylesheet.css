@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'instrument-sans';
-    src: url("/assets/fonts/instrument-sans/InstrumentSans-Regular.woff2") format("woff2");
+    src: url("../assets/fonts/instrument-sans/InstrumentSans-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'instrument-serif';
-    src: url("/assets/fonts/instrument-serif/InstrumentSerif-Italic.woff2") format("woff2");
+    src: url("../assets/fonts/instrument-serif/InstrumentSerif-Italic.woff2") format("woff2");
     font-weight: 100;
     font-style: italic;
 }
@@ -95,16 +95,22 @@ header, header > div {
 }  .header-button-wstroke:hover { opacity: 0.8; }
 
 .hero {
+    line-height: 0;
     display: flex;
     align-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
 }
 .hero-header {
-    line-height: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .hero-subtext {
     font-family: 'instrument-sans', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
 }
 .hero-title {
     font-family: 'instrument-serif', serif;
