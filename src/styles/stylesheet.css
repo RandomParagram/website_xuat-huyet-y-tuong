@@ -1,17 +1,90 @@
 @font-face {
     font-family: 'instrument-sans';
-    src: url("assets/fonts/instrument-sans/InstrumentSans-Regular.woff2") format('woff2');
+    src: url("/assets/fonts/instrument-sans/InstrumentSans-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+}
+
+/* function: site-wide header styling */
+header, header > div {
+    /* styling: header */
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+    /* display: full header and content distributed spaced between */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: none;
+    gap: 24px;
+    /* test: borderline */
+    /* border: 2px solid red; */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Right side container (All other buttons) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+}
+
+.mrl_combination {
+    /* img: header img acts as combination mark */
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+.button-arrow {
+    height: 12px;
+    width: auto;
+    display: block;
 }
 
 .header-nav-button {
-    background-color: transparent;
-    border: transparent;
-    padding: 14px 28px;
-    font-size: 16px;
-    font-family: 'instrument-sans', serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-}
+    /* display: button config */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 12px;
+    /* styling: button */
+    background-color: #000;
+    color: #fff;
+    /* styling: button text */
+    text-decoration: none;
+    font-family: 'instrument-sans', sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+    /* animation: fade out */
+    transition: opacity 0.3s ease;
+}  .header-nav-button:hover { opacity: 0.8; }
+
+.header-button-wstroke {
+    /* display: button config */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    /* styling: button */
+    background-color: #000;
+    color: #fff;
+    border: 1px #ffffff solid;
+    /* styling: button text */
+    text-decoration: none;
+    font-family: 'instrument-sans', sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+    /* animation: fade out */
+    transition: opacity 0.3s ease;
+}  .header-button-wstroke:hover { opacity: 0.8; }
