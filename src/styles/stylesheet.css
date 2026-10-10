@@ -14,6 +14,12 @@
     font-family: 'instrument-sans';
     src: url("../../assets/fonts/instrument-sans/InstrumentSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'instrument-sans';
+    src: url("../../assets/fonts/instrument-sans/InstrumentSans-Bold.woff2") format("woff2");
+    font-weight: 800;
     font-style: bold;
 }
 /* function: site-wide header styling */
@@ -151,8 +157,131 @@ header, header > div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom:100px;
 }
 
 .down-arrow{
     width: auto;
+}
+
+.product-header{
+     display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.product-title{
+    font-size: 24px;
+    font-family: 'instrument-sans',sans-serif;
+    font-weight: 400;
+}
+
+.product-title strong {
+    font-weight: 600;
+}
+
+.underline-product{
+    font-size: 20px;
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    white-space: nowrap;
+    width: max-content;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-display{
+    padding-top:60px;
+}
+
+
+.black-board{
+    background-color: black;
+    color:white;
+    width:85%;
+    min-height:600px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+.board-text{
+    max-width: 65%;
+}
+
+.board-text h2{
+    font-family: 'instrument-sans',sans-serif;
+    font-size:46px;
+    font-weight:400;
+    line-height:1.15;
+    margin:0;
+    color:white;
+}
+
+.board-text h2+h2{
+    font-weight: 600;
+}
+
+.board-text p{
+    font-family: 'instrument-sans',sans-serif;
+    font-size:20px;
+    line-height:1.5;
+    margin-top:16px;
+    max-width:100%;
+    color:white;
+}
+
+.board-button{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    margin-top:auto;
+    padding-top: 24px;
+    position: relative;
+    z-index:1;
+}
+
+
+.configure-button,
+.details-button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'instrument-sans',sans-serif;
+    font-size: 20px;
+    padding: 8px 10px;
+    font-weight:600;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.configure-button {
+    background: #fff;
+    color:#000;
+    border: 1px solid #fff;
+}
+
+.details-button{
+
+    background: transparent;
+    color:#fff;
+    border: 1px solid #fff;
+}
+
+
+.tablet-outline {
+    position: absolute;
+    top: 16px;
+    right: 3%;
+    width:24%;
+    height:88%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
