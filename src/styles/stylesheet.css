@@ -125,6 +125,9 @@ header, header > div {
 .Contact-button {
     line-height: 15;
     background-color: black;
+    font-family: 'instrument-sans';
+    font-style: bold;
+    font-weight:600;
     color: white;
     width: fit-content;
     text-decoration: none;
@@ -141,11 +144,15 @@ header, header > div {
 }
 
 .scroll-down {
-      margin-top: 280px;
-    height: 120px;
+      margin-top: 300px;
+    height: 5px;
     background: linear-gradient(white, #eeeeee);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.down-arrow{
+    width: auto;
 }
